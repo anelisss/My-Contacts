@@ -1,38 +1,107 @@
-.App {
+* {
+  font-family: 'Roboto', sans-serif;
+  background-color:rgb(230, 209, 230);
+
+}
+body {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 61px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  font-size: 14px;
+  font-weight: 6s00;
+  letter-spacing: 0.1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 5px 0 10px 0;
+  padding: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid cadetblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input:focus {
+  outline-style: none;
+}
+input:hover {
+  border-bottom: 2px solid cadetblue;
+}
+
+button {
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+button:hover {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  
+}
+
+thead {
+  border-bottom: 1px solid cadetblue;
+}
+
+th, td {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 15px;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.align-center {
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.self-end {
+  align-self: flex-end;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.phone-form {
+  border: double cadetblue;
+  max-width: 250px;
+  margin: auto;
+  padding: 15px;
+}
+
+.phone-list {
+  margin: 50px auto;
+  text-align: center;
 }
